@@ -1,0 +1,29 @@
+fn main() { //Fonction principale
+
+    println!("Bla bla");  
+    print!("Bla bla");
+
+    //TYPES DE VARIABLES --------------
+    let count: i32 = 10; //Nombre entier
+        // Peut s'écrire "u32" si la valeur ne peut qu'être positive, "u" pour "unsigned"
+    let total: f64 = 150.75; //Nombre à virgule
+    let grade: char = 'A'; //Caractère unique
+    let is_active: bool = false; //Booléen
+    let user_name: &str = "Bob123"; //String
+
+    let mut age: i32 = 24; //Permet de rendre muable une variable, qui par défaut est immuable
+    age = 25;
+
+    //CONVERSION DU TYPE DE LA VARIABLE
+    let number: i32 = 5;
+    let decimal: f64 = number as f64;    // devient 5.0
+
+    // Conversion de flottant en entier
+    let decimal: f64 = 9.7;
+    let number: i32 = decimal as i32;    // devient 9 (la partie décimale est tronquée
+
+
+    //Shadowing (Redéfinir une variable avec "let" shadow/écrase l'ancienne valeur et son type de variable)
+    let number: &str = "T-H-R-E-E";
+    let number: i32 = 3; //On passe d'un type STRING à un nombre i32
+}
