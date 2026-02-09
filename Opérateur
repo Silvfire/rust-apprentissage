@@ -1,0 +1,12 @@
+/*
+Addition : +
+Soustraction : -
+Division : /
+Multiplication : *
+*/
+
+// Exemple :
+let x: f64 = 3.3;
+let y: f64 = 4.1;
+let z: f64 = x + y;
+// z contient 7.4
